@@ -4,10 +4,10 @@ const mongoose = require('mongoose'),
 module.exports = {
 	init: () => {
 		const dbOptions = {
-			useNewUrlParser: true,
-			autoIndex: false,
-			connectTimeoutMS: 10000,
-			family: 4,
+			useNewUrlParser   : true,
+			autoIndex         : false,
+			connectTimeoutMS  : 10000,
+			family            : 4,
 			useUnifiedTopology: true,
 		};
 		mongoose.connect(MONGO_URL, dbOptions);
