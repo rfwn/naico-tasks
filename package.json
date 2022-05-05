@@ -1,8 +1,27 @@
 {
   "dependencies": {
-    "ccxt": "^1.81.17"
+    "ccxt": "^1.81.17",
+    "mongoose": "^6.3.2"
   },
   "devDependencies": {
     "eslint": "^8.14.0"
-  }
+  },
+  "name": "naico-tasks",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rfwn/naico-tasks.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rfwn/naico-tasks/issues"
+  },
+  "homepage": "https://github.com/rfwn/naico-tasks#readme",
+  "description": ""
 }
