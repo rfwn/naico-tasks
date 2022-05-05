@@ -1,5 +1,5 @@
 /**
- *
+ * Parses the candlestick data to a readable format
  * @param {OHLVC[]} ohlcv The array of candlesticks
  * @returns Formatetd array of candlesticks
  */
@@ -17,6 +17,7 @@ module.exports.parseOHLCV = (ohlcv, symbol) => {
   }));
 };
 
+// muthematicsu
 module.exports.timepresets = {
   "1m" : 60000,
   "5m" : 300000,
