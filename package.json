@@ -1,6 +1,9 @@
 {
   "dependencies": {
     "ccxt": "^1.81.17",
+    "express": "^4.18.1",
+    "express-graphql": "^0.12.0",
+    "graphql": "^15.8.0",
     "mongoose": "^6.3.2"
   },
   "devDependencies": {

@@ -1,6 +1,7 @@
 const fetchOHLCV = require("./fetchOHLCV"),
   database = require("./database"),
-  candleSchema = require("./database/models/candlestick");
+  candleSchema = require("./database/models/candlestick"),
+  Server = require("./graphql");
 
 (async () => {
   // Connect to database
@@ -29,4 +30,6 @@ const fetchOHLCV = require("./fetchOHLCV"),
     await document.save();
   }
   console.log("Wrote all candles to database");
+
+  Server.start();
 })();
