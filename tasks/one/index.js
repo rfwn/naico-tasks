@@ -8,7 +8,7 @@ const Server = require('./graphql');
   await database.init()
 
   // Delete existing candles to prevent data conflict
-  await candleSchema
+  await CandleSchema
     .deleteMany({}, () => {
       console.log('Cleared the database')
     })
