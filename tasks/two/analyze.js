@@ -5,11 +5,11 @@ class AnalyzeDecisions {
     this.results = []
   }
 
-  validateDesicion (analyst_decision, signal_status) {
-    if (analyst_decision === 'confirm' && signal_status === 'target') {
+  validateDesicion (analystDecision, signalStatus) {
+    if (analystDecision === 'confirm' && signalStatus === 'target') {
       return true
     } else if (
-      analyst_decision === 'reject' && signal_status === 'stop'
+      analystDecision === 'reject' && signalStatus === 'stop'
     ) {
       return true
     } else return false

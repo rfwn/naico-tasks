@@ -1,6 +1,6 @@
 const { Schema, model } = require('mongoose')
 
-const candleSchema = Schema({
+const CandleSchema = Schema({
   symbol: String,
   data: {
     open: Number,
@@ -12,4 +12,4 @@ const candleSchema = Schema({
   timestamp: Number
 })
 
-module.exports = model('Candlesticks', candleSchema)
+module.exports = model('Candlesticks', CandleSchema)

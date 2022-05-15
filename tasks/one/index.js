@@ -1,6 +1,6 @@
 const fetchOHLCV = require('./fetchOHLCV')
 const database = require('./database')
-const candleSchema = require('./database/models/candlestick')
+const CandleSchema = require('./database/models/candlestick')
 const Server = require('./graphql');
 
 (async () => {
@@ -26,7 +26,7 @@ const Server = require('./graphql');
 
   // Saving to database
   for (const candle of candles) {
-    const document = new candleSchema(candle)
+    const document = new CandleSchema(candle)
     await document.save()
   }
   console.log('Wrote all candles to database')
